@@ -6,11 +6,9 @@
 //      Y88888P     `8888P'     Y88888P    `8888P    d88888P   d88888P   d88888P   `88888P'   `88888P'   dP
 //
 
-//vr. 2.1.2
-
 //  Made by sos9533, mdisprgm, job-gut, Blue00123, kdg7313
 //  Recommend using 'visual studio code'(https://code.visualstudio.com/)
-
+// Edit by BirchTree1205
 
 /*
     How to use (README.md)
@@ -48,7 +46,7 @@ export let language = "english";
 
 //system message
 //시스템 메시지
-export const SystemMessageTitle = "§l§f[ §dSERVER §f]§r";
+export const SystemMessageTitle = "§l§f[ §dVA §f]§r";
 
 
 //use logging (true/false)
@@ -68,7 +66,7 @@ export const UseWelcomeMessage: boolean = true;
 
 //welcome message
 //참여 환영 메시지 - 참가한 플레이어의 채팅창에 출력
-export const WelcomeMessage = "§7welcome! \nEdit plugin's custom settings in 'plugins/bdsx-sos9533scr-main/setting'.\n\n'plugins/bdsx-sos9533scr-main/setting'에서 플러그인을 세팅해주세요.\n§cneed help? Discord : sos9533#3423\n도움이 필요하신가요? 디스코드 : sos9533#3423";
+export const WelcomeMessage = "§1 Welcome! \n§cValeria Welcomes thine";
 
 
 
@@ -211,7 +209,7 @@ export const Spawncommandexplanation = "tp to spawn";
 
 //spawn coordinate (x y z)
 //스폰 좌표 (x y z)
-export const SpawnCoordinate = "0 10 0";
+export const SpawnCoordinate = "0 80 0";
 
 
 //spawn warp message
@@ -351,7 +349,7 @@ export const BasicitemCommand = "item";
 
 //give basic item when player join the server first time (true/false)
 //처음 접속시 자동으로 기본템 지급 (true/false)
-export const JoinGiveBasictem: boolean = true;
+export const JoinGiveBasictem: boolean = false;
 
 
 //아이템 1 //item A
@@ -398,7 +396,7 @@ export const UsePrefix: boolean = true;
 //형식B     <칭호> 닉네임 : 채팅
 //형식C     [칭호] <닉네임> : 채팅
 //형식D     [칭호] 닉네임 : 채팅
-export let PrefixChatOutputType = "A";
+export let PrefixChatOutputType = "C";
 
 
 
@@ -433,7 +431,7 @@ export const PrefixLength = 10;
 
 //basic Prefix - output this when someone don't have any Prefix
 //기본 칭호 - 아무칭호도 없을때 대신 출력될 칭호
-export const BasicPrefix = "§7Member";
+export const BasicPrefix = "§7Citizen";
 
 
 
@@ -472,7 +470,7 @@ export const UseAntiLongNickname: boolean = true;
 
 //long name kick length
 //긴 닉네임 길이 (권장:30)
-export const AntiLongNicknameLength = 30;
+export const AntiLongNicknameLength = 50;
 
 
 //long nickname - kick message - output all player
@@ -494,7 +492,7 @@ export const AntiLongNicknameTitle = "§l§f[ §7Kick §f]\n\n§cyou use too lon
 
 //use chatcut (true/false)
 //도배방지 사용여부 (true/false)
-export const UseChatCut: boolean = true;
+export const UseChatCut: boolean = false;
 
 
 //use whisper blocker (to block /w @a @e @e @e @e @e @e @e)
@@ -558,7 +556,7 @@ export const AntiCrasherTitle = "§l§f[ §7Kick §f]\n\n§cDon't use crasher";
 
 //block § (true/false)
 //§ 사용 막기 사용여부 (true/false)
-export const UseBlockColorWord: boolean = true;
+export const UseBlockColorWord: boolean = false;
 
 
 //block § message
@@ -633,6 +631,7 @@ export const UseJumptag: boolean = true;
 // don't touch this part
 import { bedrockServer } from "bdsx/launcher";
 export const runCommand = bedrockServer.executeCommand;
+export const RakPeer = bedrockServer.rakPeer;
 export const DEVICE_ID_FMT_LENGTH = 36;
 export const DEVICE_ID_FMT_LENGTH_ANDROID = 32;
 export const Prefix_json = "Prefix.json";
